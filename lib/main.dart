@@ -42,6 +42,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final _homeController = HomeController();
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,6 +63,7 @@ class _HomePageState extends State<HomePage> {
           return Container(
             child: Column(
               children: [
+              
                 _.cameraController != null &&
                         _.cameraController!.value.isInitialized
                     ? Container(
@@ -76,11 +78,8 @@ class _HomePageState extends State<HomePage> {
                     alignment: Alignment.topCenter,
                     width: 200,
                     height: 200,
-                    color: Colors.white,
-                    child: Image.asset(
-                      'images/${_.faceAtMoment}',
-                      fit: BoxFit.fill,
-                    ),
+                    color: Color.fromARGB(255, 128, 14, 14),
+                    
                   ),
                 ),
                 Text(
